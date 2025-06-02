@@ -1,0 +1,6 @@
+{
+    "BEFORE": 0,
+    "AFTER": 1,
+    "VAGUE": 2,
+    "EQUAL": 3
+}

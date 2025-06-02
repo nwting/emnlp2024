@@ -1,0 +1,8 @@
+{
+    "BEFORE": 0,
+    "AFTER": 1,
+    "INCLUDES": 2,
+    "IS_INCLUDED": 3,
+    "SIMULTANEOUS": 4,
+    "VAGUE": 5
+}
