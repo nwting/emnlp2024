@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" autoUpload="Always" serverName="ningwanting@10.7.57.69:22 agent (6)" remoteFilesAllowedToDisappearOnAutoupload="false">
+  <component name="PublishConfigData" autoUpload="Always" serverName="ningwanting@10.7.47.247:22 agent" remoteFilesAllowedToDisappearOnAutoupload="false">
     <serverData>
+      <paths name="ningwanting@10.7.47.247:22 agent">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/ningwanting/nwt-emnlp" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="ningwanting@10.7.57.69:22 agent">
         <serverdata>
           <mappings>
