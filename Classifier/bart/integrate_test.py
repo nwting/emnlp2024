@@ -43,7 +43,7 @@ def integrate_test(args,logger,tepath,tagpath,save_path,model1path,model2path):
     model2.to(device)
 
 
-    test_result = test_for_integrate(model1=model1,model2=model2,model2list=mlist,args=args, device=device, data_loader1=test_loader1,data_loader2=test_loader2,classes_map=classes_map,save_path=save_path)
+    test_result = test_for_integrate(model1=model1,model2=model2,args=args, device=device, data_loader1=test_loader1,data_loader2=test_loader2,classes_map=classes_map,save_path=save_path)
 
     # print(test_result)
     results = {

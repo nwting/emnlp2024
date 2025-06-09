@@ -24,7 +24,7 @@ def bart_test(args,logger,tepath,tagpath):
     # model, load weights
     myconfig = BartConfig.from_pretrained(model_path)
     myconfig.num_labels=len(classes_map)
-    model_file=str(f"SaveModels/{args.dataset}/vbart/won_model{args.version}.bin")
+    model_file=str(f"SaveModels/{args.dataset}/vbart/won_model{args.model1}.bin")
     model = bart_model.BartForSequenceClassification.from_pretrained(model_file, config=myconfig)
     model.to(device)
     test_result = test_forBART(model=model, args=args, device=args.device, data_loader=test_loader,

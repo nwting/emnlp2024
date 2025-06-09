@@ -26,7 +26,7 @@ def small_bart_test(args,logger,tepath,tagpath):
     myconfig = BartConfig.from_pretrained(model_path)
     myconfig.num_labels=len(classes_map)
 
-    model_file = str(f"SaveModels/{args.dataset}/vsmodel/{args.version}won_model.bin")
+    model_file = str(f"SaveModels/{args.dataset}/vsmodel/{args.model2}won_model.bin")
     model = small_bart_model.BartForSequenceClassification.from_pretrained(model_file, config=myconfig)
     model.to(device)
     test_result = test_for_smallBART(model=model, args=args, device=args.device, data_loader=test_loader,classes_map=classes_map)

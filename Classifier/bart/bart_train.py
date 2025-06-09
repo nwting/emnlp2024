@@ -90,9 +90,9 @@ def bart_train(args,logger,trpath,depath,tagpath,save_path,metric):
             'dev_macro_f1': dev_result['macro_f1'],
             'dev_micro_f1': dev_result['micro_f1'],
             'dev_weighted_f1': dev_result['weighted_f1'],
-            'won_dev_macro_f1': dev_result['won_macro_f1'],
-            'won_dev_micro_f1': dev_result['won_micro_f1'],
-            'won_dev_weighted_f1': dev_result['won_weighted_f1']
+            'won_macro_f1': dev_result['won_macro_f1'],
+            'won_micro_f1': dev_result['won_micro_f1'],
+            'won_weighted_f1': dev_result['won_weighted_f1']
         }
         if epoch % 10 == 9:
             logger.info('Training/training loss: {:.4f}'.format(train_result['loss'] / 10, epoch * len(train_loader) + epoch))
